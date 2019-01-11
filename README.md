@@ -53,6 +53,7 @@ Utilities:
 			  it adds a newline, so this function removes that.
 
 Pipe:
+
 	Pipe.c
 		void evalPipe(char** subStrings, int count, char* pwd)
 			- This is the function that is called from main, and it will call myPipe(). It will check for redirection
@@ -66,6 +67,7 @@ Pipe:
 			  'i' to keep track of where we are in the recursion process
 
 Redirection:
+
 	Redirect.c
 		int outRedirect(char* file, int flag)
 			- This function saves STDOUT_FILENO then dups the STDOUT_FILENO to the specified file, it also return the saved dup
