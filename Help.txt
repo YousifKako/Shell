@@ -1,0 +1,23 @@
+Welcome to My Shell Version 1.0 - Release by Yousif Kako
+
+- ALL of the commands should work accordingly
+- Exec'ed programs can take n amount of flags
+- NOTE: If you want to call a batch file you may redirect it when you call
+  the program. EXAMPLE: Linux --> bash> ./Shell < cmd.txt
+  but if you want to do that... please commant out line 35: printf("%s>", pwd)
+  so the pwd would not print out each iteration.
+  Also, please note that you have to put a new line at the end of the batch file
+  EXAMPLE: batch File --> 1) ls
+                          2) ls | wc
+                          3) ps -l | grep Shell >> out.txt
+               Empty -->  4) 
+    
+    - EXPLANATION: I initially wanted to auto mate it by reading the argv
+      but when I use redirect in '<', argv does not grab that varible. It only
+      has ./Shell
+        * Bash> ./Shell < batch.txt
+                print argv[0] --> ./Shell
+                print argv[1] --> NULL
+      It does not grab that anything after a redirection
+      
+- For questions about a specific functon, please check the README file
